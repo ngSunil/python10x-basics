@@ -1,0 +1,14 @@
+1. python3 -m venv venv >> would create a virtual environment
+2. source venv/bin/activate >> to activate the virtual environment
+3. pip list >> would list all the packages installed in the virtual env
+4. pip install pandas
+5. to send the list of all the packages used by the appication, to another person just use
+pip freeze > requirements.txt
+6. the other person will then create the virtual env in his PC and activate the venv and run pip install -r requirements.txt
+7. To assign a global variable to from inside a function use the global keyword eg global n inside the function to set/ use its value inside a function
+8. To identify elements in a list we will need the index value while in dictionary we will need the key 
+9. Functional Programming>> You can assign variable to a function, you can return a function from another function or you can also pass a function as parameter to another function
+10. Lambda function:: any function which do not have any name
+11. If you dont want to write or print any statement inside a class or function simply write pass other indentation error will overcome
+12. Constructors are defined at the beginning and destructors are defined at the end.
+

@@ -1,0 +1,5 @@
+numbers = (1,2,3,4,5)
+numbers2 = (10,11)
+print( numbers + numbers2)
+print(sorted(numbers))
+print(numbers.index(4))
