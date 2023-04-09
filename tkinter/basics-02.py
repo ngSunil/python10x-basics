@@ -1,0 +1,10 @@
+from tkinter import *
+window = Tk()
+window.title("SUNIL BISWAKARMA")
+window.geometry('500x700')
+window.config(bg='yellow')
+frame1 = Frame(window, bg='red', width=300, height=300, cursor='dot')
+frame2 = Frame(window, bg='green', width=300, height=300, cursor='dotbox')
+frame1.pack(side=TOP)
+frame2.pack(side=BOTTOM)
+mainloop()
