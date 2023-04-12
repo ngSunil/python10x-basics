@@ -11,4 +11,8 @@ pip freeze > requirements.txt
 10. Lambda function:: any function which do not have any name
 11. If you dont want to write or print any statement inside a class or function simply write pass other indentation error will overcome
 12. Constructors are defined at the beginning and destructors are defined at the end.
+Virtual Env:
+1. pip install virtualenv >> will install the virtualenv packages
+2. virutalenv env >> will create a virtualenv env folder
+3. source env/bin/activate >> activate the virtual environment
 
