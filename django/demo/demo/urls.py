@@ -1,5 +1,5 @@
 """
-URL configuration for basetemplate project.
+URL configuration for demo project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -15,12 +15,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
-from templateapp.views import hello
-from dtlapp import views
+from django.urls import path, include
+from testapp.views import hello
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('template/', hello),
-    path('dtl/', views.dtlview),
-    path('dtladd/', views.dtladd, name='dtladd')
+    path('demo/', hello),
+    path('accounts/', include('accounts.urls'))
 ]

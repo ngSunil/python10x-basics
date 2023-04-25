@@ -1,4 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 Hello {{ name }}
+<form action="{% url 'dtladd' %}" method="post">
+    {% csrf_token %}
+    <input type="text" name="num1">
+    <input type="text" name="num2">
+    <button type="submit">Submit</button>
+</form>
 {% endblock %}

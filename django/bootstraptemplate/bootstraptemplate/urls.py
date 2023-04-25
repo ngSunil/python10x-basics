@@ -1,5 +1,5 @@
 """
-URL configuration for basetemplate project.
+URL configuration for bootstraptemplate project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -16,11 +16,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from templateapp.views import hello
-from dtlapp import views
+from bstemplateapp import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('template/', hello),
-    path('dtl/', views.dtlview),
-    path('dtladd/', views.dtladd, name='dtladd')
+    # path('', lambda request: views.render(request, 'index.html'))
+    path('', views.index)
 ]
