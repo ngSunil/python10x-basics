@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-{% block title %} Home {% endblock %}
+{#% block title %} Home {% endblock %#}
 {% block content %}
 {% if user.is_authenticated %}
 Welcome {{user.username}}
@@ -8,3 +8,8 @@ Welcome {{user.username}}
 <p>Please Login</p><a href="{% url 'login' %}">Login</a>
 {% endif %}
 {% endblock%}
+
+
+{#% block footer %}
+This is the footer from the home html
+{% endblock %#}
