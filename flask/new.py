@@ -22,7 +22,11 @@ def register():
         
 @web.route('/second')
 def second():
-    return render_template('second.html')           
+    return render_template('second.html')     
+
+@web.route('/hyperlink')      
+def hyperlink():
+    return render_template('hyperlink.html')
 # MAIN
 if __name__ == '__main__':
     web.run(debug=True)
